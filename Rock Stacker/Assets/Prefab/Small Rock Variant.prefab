@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Rock Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5166776941962312695, guid: 61f80df11caf317028a5f2e02417cec0, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 3de8fc65952f520f986b09d8b8ed0814, type: 3}
     - target: {fileID: 5539520423663357756, guid: 61f80df11caf317028a5f2e02417cec0, type: 3}
       propertyPath: m_Color.b
       value: 0.46925062

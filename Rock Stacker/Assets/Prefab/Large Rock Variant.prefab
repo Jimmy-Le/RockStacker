@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Rock Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5166776941962312695, guid: 61f80df11caf317028a5f2e02417cec0, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c5ebf5483d642953b97dc63bc54f8038, type: 3}
     - target: {fileID: 5539520423663357756, guid: 61f80df11caf317028a5f2e02417cec0, type: 3}
       propertyPath: m_Color.b
       value: 0.6179246
