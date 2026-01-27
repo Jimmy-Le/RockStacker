@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 
 public class BasketScript : MonoBehaviour
@@ -7,12 +8,14 @@ public class BasketScript : MonoBehaviour
     // Objects
     public Transform basketTransform;
     
+    public TextMeshProUGUI scoreText;
+    
     // Input Action Stuff
     public InputActionAsset inputAction;
     private InputAction move_action;
 
     // Properties
-    public float speed = 2f;
+    public float speed = 5f;
     public float score;
     private float limit = 9f;
     
@@ -45,6 +48,22 @@ public class BasketScript : MonoBehaviour
                 basketTransform.Translate(direction.x * speed * Time.deltaTime, 0, 0, Space.World);
             }
         } 
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Mall")
+        {
+            score += 1;
+        }
+        else
+        {
+            score -= 1;
+        }
+
+        scoreText.text = $"Score: {score}";
+
+        Destroy(other.gameObject);
     }
     
     
