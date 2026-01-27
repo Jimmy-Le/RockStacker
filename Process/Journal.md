@@ -1,6 +1,6 @@
 # Game Journal Thing
 
-## Make-A-Thing | 19-01-2026
+# Make-A-Thing | 19-01-2026
 
 ### Idea: Rock Stacker 
 
@@ -127,7 +127,7 @@ This became kind of convenient sometimes.
 
 -----------
 
-## Design Journal: Exploration Prototype 1 | 27-01-2026
+# Design Journal: Exploration Prototype 1 | 27-01-2026
 
 Alright, since we didn't really have a project to do, 
 I decided that I wanted to complete the Catch-A-Mall project, while using my own coding methods
