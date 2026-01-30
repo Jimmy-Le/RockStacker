@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1554858301085699823}
   - component: {fileID: 7871190913582977448}
-  - component: {fileID: 3586977774591607081}
   - component: {fileID: 739690785128714280}
+  - component: {fileID: 5970886506447464070}
   m_Layer: 0
   m_Name: Basket
   m_TagString: Untagged
@@ -93,23 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &3586977774591607081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7214827962588656948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87ffa0c199624e1bcb7f7e73d62c7afb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  basketTransform: {fileID: 1554858301085699823}
-  scoreText: {fileID: 0}
-  inputAction: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  speed: 5
-  score: 0
 --- !u!61 &739690785128714280
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,3 +139,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.1009965, y: 1.5742974}
   m_EdgeRadius: 0
+--- !u!114 &5970886506447464070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7214827962588656948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ffa0c199624e1bcb7f7e73d62c7afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BasketScript
+  basketTransform: {fileID: 0}
+  scoreText: {fileID: 0}
+  inputAction: {fileID: 0}
+  speed: 6
+  score: 0
