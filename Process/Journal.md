@@ -331,24 +331,155 @@ https://sh4rpsteel.itch.io/the-fellmonger
 ![thumbsUp](/Process/Images/Emote.png)
 ----- ---------
 
-# Exploration Prototype 3 | 9-02-2026
+# Exploration Prototype 3 | 08-02-2026
 
 I was feeling a little burned out from programming from the game jam, so I will be mainly hand drawn prototypes this week.
 
 As such, let's try to think up some big fun ideas.
 
-## Exploration Prototype 3: Day 1 | 9-02-2026
+## Exploration Prototype 3: Day 1 | 08-02-2026
 
 I really liked the Golden Sun growing up. I played it before I could even read, and what really hooked me in were the
-"psynergy" mechanics. These were essentially the HMs from pokemon that you can use outside of battle to manipulate objects in the overworld.
+"psynergy" mechanics. These were essentially the HMs from pokemon that you can use outside of battle to manipulate objects in the overworld, except those skills can be used for different situations.
 
 ![GoldenSunGames](/Process/Images/golden_sun_games.jpeg)
 
 ![Psynergy](/Process/Images/Ankohl.gif)
 
-So I was thinking, what if I "made" a game with my own psynergy
+So I was thinking, what if I "made" a puzzle game using similar mechanics like psynergy.
 
-![CustomPsynergy](/Process/Images/)
+### Bootleg Golden Sun Prototype
+- Here is a **Role Prototype** of the kind of psynergy that I want to implement
+- The first one is the skill to shrink and grow object. 
+  - The idea is that growing the cube will let you access a path on the elevated level, and shrinking things could unblock paths
+- The middle one is just the Move psynergy from the game, but I believe that if I made a game it would be essential to be able to move things
+- The last one is the ability to cut things
+  - This would be useful to cut marked walls to create stairs and cut vines blocking the way.
+
+![CustomPsynergy](/Process/Images/psynergy_prototype.png)
+
+
+- After this point, I was feeling a bit overwhelmed, and did not feel like coding this. It would be fun for a different time, but not today.
+
+
+## Exploration Prototype 3: Day 2 | 09-02-2026
+
+I was still on the fence about programming, so I continued to explore some big ideas on paper and incorporate the singleton spawning stuff we saw in class.
+This next one is inspired by a lot of Korean Webtoons where it's the apocalypse and there's a "system" that gives people powers to fend off monster invasions.
+
+### Gamer Apocalypse Idea
+- The idea is that you are a gamer that lives alone and have not left your house for over a month because you were busy playing games. You eventually run out of cup noodles, and decide to go out to the local convenient store to buy more.
+- You eventually reach the store, notice that the cashier is a monster, scream, then someone saves you and explains the situation to you that an apocalypse happened and a "Game System" suddenly appeared 
+- You notice the "pop up screen" in the corner of your eye (screen) that you have been ignoring because you thought it was a symptom from playing too much games
+- It tells you the world is ending, but you have been bestowed a power to help save the world
+- The power lets you use abilities of the games you played recently
+  - The games you played in the intro will serve as a tutorial of the abilities
+  - These games are
+    - Minecraft
+    - League of Legends
+    - Valorant
+  - More games can be collected in the world and for you to use
+  - Eventually you can find a Game Developer Kit and be able to mix and match abilities from different games for a custom character
+
+
+### The Prototypes
+I made some Look Feel / Role Prototypes for each of the games forms that can be switched at any time using TAB
+
+*Ignore the big ass white space in the images
+
+
+#### Minecraft
+The purpose of the Minecraft Form is to offer the player base building and crafting abilities, while also providing the iconic combat gameplay
+
+![MinecraftUI](/Process/Images/mine_ui.png)
+
+Abilities
+- 1: Switch to Sword
+- 2: Switch to Bow and Arrow
+- 3: Switch to Place Block Mode
+- 4: Switch to Place TNT
+- Q: Shield Block
+- E: Open Inventory
+  - Can craft stuff inside
+
+Special Mechanics
+- Breaking buildings drops Blocks that the user can place down to build walls
+- Killing enemies drop crafting material
+- Inventory can carry the materials and craft weapon upgrades, furniture, other game objects
+- Crafting Items, Armor, Weapon Upgrades (Sword -> Diamond Sword/ Gun -> Vandal)
+- Arrows can curve over walls
+- Monsters from the minecraft world will spawn in
+  - Creepers 
+  - Skeletons
+  - Zombies
+
+
+#### Valorant
+The purpose of this Valorant Form is to offer players gun gameplay, where they can aim to shoot the enemies.
+This form is mostly focused on killing 
+
+![ValorantUI](/Process/Images/val_ui.png)
+
+Abilities
+- 1: Switch to Main Gun
+- 2: Switch to Pistol
+- 3: Switch to Knife
+- 4: Plant the spike (Detonate after a certain amount of time)
+- Q: Smoke
+  - Create a sphere that drops enemy aggro and vision when entering inside
+- E: Ultimate Ability (Throw knives that pierces enemies for a certain period of time) requires 5 Charges
+- Shift: Quick Dash, requires 2 Charges
+
+
+Special Mechanics
+- Charges: Earn a Charge on enemy kill
+- Ammo: Each gun has a certain amount of ammo that needs to reload once depleted
+- Headshots: Enemies have points on their body that guarantees critical damage when hit
+
+
+#### League of Legends
+The purpose of the LOL Form is to offer players the baby difficulty and mage fantasy.
+This form offers a lot of utility and crowd control.
+
+
+![LOLUI](/Process/Images/lol_ui.png)
+
+Abilities
+- 1: Root
+  - Throw a ball in straight line that damages and immobilize the first 2 enemies hit
+- 2: Barrier
+  - Create a shield for all party members that offer bonus hp
+- 3: Slow Ball
+  - Create a ball of light that slows enemies movement speed in an area for a certain duration. Press it again or after expiring detonates and deal damage,
+- 4: Final Spark
+  - Deal big damage and a straight line to all enemies in the area
+- Q: Potion
+  - Gives health regeneration over time
+- E: Ward (explained below)
+
+
+Special Mechanics
+- Auto Attack (Left click): The basic attack will home in on on the enemies, but they can still be blocked
+- Shields carry over when switching forms
+- Wards: Creates a zone illuminated and prevents enemies from spawning in that area (they can still walk into it), 
+  - They can also act as waypoints to teleport to
+  - Intended to be used to set up a temporary shelter
+- Monsters from the LOL world spawn
+  - Melee Minions
+  - Caster Minions
+
+
+
+### Afterthought
+After doing these prototypes, I do think it would be a good idea and the mechanics kind of play into each other, 
+however one major issue is the keybindings. For the LOL form, the main buttons used are 1,2,3,4, while the other forms don't rely on it. This can cause players to struggle from switching to different forms
+
+The other obvious issue is the implementation time, having to create all of these mechanics that interacts with eachother and offer the possibility of future Games affecting them will be hard to plan.
+
+If I were to actually work on this idea, I think after creating everything listed, I would only need to focus on the narrative aspects which would make things much smoother.
+
+
+---- --------
 
 
 
