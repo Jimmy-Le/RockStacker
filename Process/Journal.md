@@ -330,3 +330,42 @@ https://sh4rpsteel.itch.io/the-fellmonger
 - Lead Programmer: Jimmy Le (Me)
 ![thumbsUp](/Process/Images/Emote.png)
 ----- ---------
+
+# Exploration Prototype 3 | 9-02-2026
+
+I was feeling a little burned out from programming from the game jam, so I will be mainly hand drawn prototypes this week.
+
+As such, let's try to think up some big fun ideas.
+
+## Exploration Prototype 3: Day 1 | 9-02-2026
+
+I really liked the Golden Sun growing up. I played it before I could even read, and what really hooked me in were the
+"psynergy" mechanics. These were essentially the HMs from pokemon that you can use outside of battle to manipulate objects in the overworld.
+
+![GoldenSunGames](/Process/Images/golden_sun_games.jpeg)
+
+![Psynergy](/Process/Images/Ankohl.gif)
+
+So I was thinking, what if I "made" a game with my own psynergy
+
+![CustomPsynergy](/Process/Images/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
