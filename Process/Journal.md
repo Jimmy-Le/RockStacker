@@ -191,7 +191,7 @@ we'll see what we do further with this project in class.
 
 # Exploration Prototype 2 | The Fellmonger | 30-01-2026
 
-This project is gonna be based on my experience at a Game Jam over the weekend!
+This project is gonna be based on my experience at a Game Jam over the weekend with Arielle, Ethan, Owen, and Hubert!
 https://sh4rpsteel.itch.io/the-fellmonger
 
 
@@ -244,10 +244,10 @@ I believe that I was writing out the scripts for the attacks.
 - The next thing was deciding enemy attacks. We had so many aspirations, but it was not possible for me to do most of them
 
 > --- Deer Attacks ---
-> Antler charge -> Glow white then attack vertically
-> Back leg kick -> Melee attack
-> Jump down and slam -> Small circle indicator
-> Summon horse? At half health
+  >   Antler charge -> Glow white then attack vertically
+  >   Back leg kick -> Melee attack
+  >   Jump down and slam -> Small circle indicator
+  >   Summon horse? At half health
 
 - Based on the things here, we did not have time to create many assets or animations for them
 - There were also physical constraints such as the jumping one, where if in theory it jumps from the top of the screen, it might get blocked by the wall and softlock the game.
@@ -262,9 +262,9 @@ I believe that I was writing out the scripts for the attacks.
 
 
   > --- Dragon Attacks ---
-  > Dice roll at half health (random attack from every single option in the game (D6) + > maybe auto kills you on contact but is avoidable)
-  > Breathing fire (AOE) -> Chain reaction
-  > Moving Whirlwinds -> Chain reaction
+    >   Dice roll at half health (random attack from every single option in the game (D6) + > maybe auto kills you on contact but is avoidable)
+    >   Breathing fire (AOE) -> Chain reaction
+    >   Moving Whirlwinds -> Chain reaction
 
 
 - These were the original idea, we had to incomporate dice decisions as a challenge, so I had to figure out how to make a dice attack.
