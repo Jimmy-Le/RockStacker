@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Table
+  - Files
+  - Stickers
+  - Sticker Sheet
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Table
+    uniqueID: 162568459
+    locked: 0
+  - name: Files
+    uniqueID: 3914874413
+    locked: 0
+  - name: Words
+    uniqueID: 2964785539
+    locked: 0
+  - name: Sticker
+    uniqueID: 1506145175
+    locked: 0
+  m_RenderingLayers:
+  - Default
